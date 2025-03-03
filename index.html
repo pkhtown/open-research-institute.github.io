@@ -189,6 +189,7 @@
         .copyright {
             opacity: 0.6;
             font-size: 0.9rem;
+            /* max-width: 400px; */
         }
         
         /* Responsive */
@@ -206,6 +207,50 @@
                 gap: 2rem;
             }
         }
+
+        .invisible-text {
+            color: rgba(85, 85, 85, 0.0)!important;
+        }
+
+        /* Add this to your CSS */
+        ol, ul {
+            margin-left: 2rem;
+            margin-bottom: 1.5rem;
+        }
+
+        li {
+            margin-bottom: 0.5rem;
+        }
+
+        ol li ol,
+        ol li ul,
+        ul li ol,
+        ul li ul {
+            margin-top: 0.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 3rem;
+        }
+        
+        .see-full-button {
+            display: inline-block;
+            background-color: #000;
+            color: #fff;
+            padding: 1rem 2rem;
+            border-radius: 4px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+        
+        .see-full-button:hover {
+            background-color: #333;
+            transform: translateY(-2px);
+        }
     </style>
 </head>
 <body>
@@ -216,7 +261,35 @@
                 <img src="assets/gradient-circle.svg"/>
             </div>
             <h1>Open Research Institute</h1>
-            <p>Unifying the frontiers of knowledge across disciplines</p>
+            <p>
+                for all who pursue understanding reality — a space where prediction trumps paradigm
+            </p>
+            <!-- <p>
+                where prediction trumps paradigm
+            </p> -->
+            <!-- <p style="color: rgba(85, 85, 85, 0.7)">
+                (across academia & the internet)
+            </p>
+            <p style="color: rgba(85, 85, 85, 0.4)">
+                (across spiritual & empirical)
+            </p>
+            <p style="color: rgba(85, 85, 85, 0.2)">
+                (across science & art)
+            </p> -->
+            <!-- 
+            (across therorists & experimentalists)
+            <p class="invisible-text">
+                (across industry & science)
+            </p>
+            <p class="invisible-text">
+                (across spiritual & empirical)
+            </p>
+            <p class="invisible-text">
+                (across science & art)
+            </p>
+            <p class="invisible-text">
+                (across mystics & scientists)
+            </p> -->
         </div>
     </section>
     
@@ -225,23 +298,120 @@
     
     <!-- About Section -->
     <section class="about">
-        <h2>Our Mission</h2>
-        <p>The Open Research Institute is dedicated to finding and unifying the frontiers of all knowledge. We bridge the gap between empirical science and mystical understanding, creating a space where diverse perspectives can converge toward deeper truth.</p>
-        <p>Through the principle of consilience – the unification of knowledge across specialized fields – we seek to address humanity's most complex challenges. Our approach recognizes that the most profound insights often emerge at the intersections of different disciplines and traditions.</p>
-        <p>We facilitate collaboration among researchers, philosophers, practitioners, and visionaries who might not otherwise connect. By fostering these unlikely partnerships, we create opportunities for breakthrough insights that transcend traditional academic and philosophical boundaries.</p>
+        <h2>🔭 Vision 🔭</h2>
+        <p>
+            The Open Research Institute (ORI) is a community & a culture. We believe no institution has a monopoly on the pursuit of truth. We believe in a plurality of paradigms and ways of knowing. Mystic or scientist, the final arbitrer of truth is your ability to predict & manipulate reality.  
+        </p>
+
+        <p>
+            We believe there is only one reality that we all have access to. Any conflict between those who seek truth can be resolved through understanding of both paradigms & translating between them. The ORI exists to facilitate & mediate this. 
+        </p>
+
+        <p>
+            We seek to find all those on the frontier of human knowledge, across all domains, empirical & the spiritual, industry & academia, science & art. We want to find our peers, as well as those who disagree with us, and overlay & compare all prespectives. 
+        </p>
+
+        <p>
+            When someone stumbles on novel, groundbreaking knowledge, whether it comes from an academic paper, a company, or twitter/discord, we want to help it reach people who will use it (peer reviewers, developers, companies, or the world at large).
+        </p>
+
+        <p>
+            We need all the help we can get it. Please join us. 
+        </p>
+
+        <p>
+            ~ Defender
+        </p>
+
+        <h2 style="margin-top: 50px;">📝 Departments 📝</h2>
+
+        <p>
+            These are the general categories of work that ORI is currently supporting:
+        </p>
+
+        <p>
+            <b>Universal alignment</b> — the science of aligning all conscious beings to each other (of which AI alignment is a subset). Lead by <a href="https://x.com/suntzoogway" target="_blank">Suntzoogway</a>.
+        </p>
+
+        <p>
+            <b>Memetics</b> — studying how ideas spread in society. Empirically observing the dynamics of collective minds & egregores with projects like the "Human Memeome Project" and building "the nooscope", which is the first instrument that can see these entities, like the first microscope revealing the existence of bacteria.
+        </p>
+
+        <p>
+            <b>Consciousness</b> — a key piece for both of the above departments
+        </p>
+
+        <p>
+            <b>Coordination infrastructure</b> — researching & developing the building blocks humanity needs to solve coordination
+        </p>
+
+        <h2 style="margin-top: 50px;">💛 How to Join 💛</h2>
+
+        <p>
+            To join the Open Research Institute, all you have to do is publish your research notes somewhere on the internet and tell us about it. 
+        </p>
+
+        <p>
+            We recommend:
+        </p>
+
+        <ol>
+            <li>Creating an open research notebook with <a href="https://dev.to/defenderofbasic/host-your-obsidian-notebook-on-github-pages-for-free-8l1" target="_blank">Obsidian + GitHub Pages</a></li>
+            <li>
+                Create a "now" page / research statement about your current work, and what your funding or collaboration needs are
+                <ul>
+                    <li>Example 1: <a href="https://chrislakin.blog/about" target="_blank">Chris Larkin</a> is working on human alignment & his statement is the about page of his substack</li>
+                    <li>Example 2: <a href="https://github.com/DefenderOfBasic/PhD?tab=readme-ov-file#defenders-phd" target="_blank">DefenderOfBasic</a> is doing an independent, internet PhD in memetics, his statement is a GitHub readme</li>
+                    <li>Example 3: <a href="https://docs.google.com/document/d/e/2PACX-1vQF6QRKFVbNvNuOkzZY2ysszKZo_oB7W8t-MiTFp00VsrEDiImir_gxvoYUQb-QTvm8wIk-LtaXljRZ/pub" target="_blank">Workflowsauce</a> has a "collab with me" google doc with what he's actively working on (education, communication, community)</li>
+                    <li>Example 4: <a href="https://docs.google.com/document/d/16tIpuu8WexxlM-3XpEub05BOTCFNiyvIVzZNXX0uDWw/edit?tab=t.0#heading=h.l5sni083xvxx" target="_blank">Ivan Vendrov</a> maintains a google doc of "shovel ready projects" for solving coordination / alignment of recommender systems</li>
+                </ul>
+            </li>
+        </ol>
+
+        <!-- 
+        - open peer review 
+        - What happens when you publish something? go to market? peer review? build it? 
+        -->
+
+        <!-- <p>
+            Where is the frontier of human knowledge, today? 
+        </p>
+
+        <p>
+            Some of it is in 
+        </p> -->
+
+        <!-- <p>
+            This is a community & a 
+        </p>
+     -->
+    
     </section>
+
+ 
+    <!-- 
+    
+    the frontier is scattered, new fields are being born
+
+    - the frontier doesn't know itself
+    - connect with go to market & peer review
+    - convergence
+    - recognition 
+    - credit 
+
+    -->
     
     <!-- Advisors Section -->
     <section class="advisors">
         <div class="advisors-inner">
-            <h2>Advisors</h2>
+            <h2>⭐️ Featured Researchers ⭐️</h2>
             <div class="advisors-grid">
                 <div class="advisor-card">
                     <div class="advisor-photo">
                         <img src="/api/placeholder/150/150" alt="placeholder">
                     </div>
                     <div class="advisor-name">Dr. Elena Sharma</div>
-                    <div class="advisor-title">Quantum Physics & Eastern Philosophy</div>
+                    <div class="advisor-title">i'm pretty invested in exploring memetics, i want to tie it together with a theory of consciousness that revolves around cognitive semiotics, linguistics and eventually narrative. it's a stretch but i have a good feeling about it so i want to follow that curiosity</div>
                 </div>
                 <div class="advisor-card">
                     <div class="advisor-photo">
@@ -280,21 +450,41 @@
                 </div>
             </div>
         </div>
+
+        <div class="button-container">
+            <a href="#" class="see-full-button">➡️ See all researchers</a>
+        </div>
     </section>
+
+    <!-- 
+    
+    - Defender, link to my substack about page
+    - Park Doing 
+    
+    -->
     
     <!-- Footer -->
     <footer>
         <div class="footer-content">
-            <div class="footer-logo">Open Research Institute</div>
-            <div class="footer-links">
+            <!-- <div class="footer-logo">Open Research Institute</div> -->
+            <!-- <div class="footer-links">
                 <a href="#">Home</a>
                 <a href="#">About</a>
                 <a href="#">Research</a>
                 <a href="#">Publications</a>
                 <a href="#">Events</a>
                 <a href="#">Contact</a>
+            </div> -->
+
+            <img src="assets/public-domain.png" width="300px"/>
+            
+            <div class="copyright" style="margin-top:20px; margin-bottom:20px">
+                The idea of the Open Research Institute itself is open source. Please copy, steal, remix to your heart's desire. All the infrastructure we create is building blocks that others can freely use towards the best possible implementation of this idea. <a style="color: #fff;" href="https://creativecommons.org/publicdomain/zero/1.0/">CC0, no rights reserved</a>
             </div>
-            <div class="copyright">© 2025 Open Research Institute. All rights reserved.</div>
+
+            <div class="footer-links">
+                <a href="https://github.com/Open-Research-Institute">https://github.com/Open-Research-Institute</a>
+            </div>
         </div>
     </footer>
 </body>
