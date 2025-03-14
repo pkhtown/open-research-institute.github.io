@@ -4,256 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/svg+xml" href="assets/gradient-circle.svg">
-
+    
     <title>Open Research Institute</title>
-    <style>
-        /* Base Styles */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            background-color: #ffffff;
-        }
-        
-        /* Hero Section */
-        .hero {
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            position: relative;
-        }
-        
-        .hero-content {
-            text-align: center;
-            z-index: 2;
-        }
-        
-        .hero h1 {
-            font-size: 5rem;
-            font-weight: 800;
-            margin-bottom: 1rem;
-            color: #000;
-        }
-        
-        .hero p {
-            font-size: 1.5rem;
-            max-width: 600px;
-            margin: 0 auto;
-            color: #555;
-        }
-        
-        /* Logo */
-        .logo {
-            width: 160px;
-            height: 160px;
-            margin: 0 auto 2rem;
-            position: relative;
-        }
-        
-        /* Separator */
-        .separator {
-            height: 120px;
-            background: linear-gradient(to bottom, #ffffff, #f5f7fa);
-            position: relative;
-            overflow: hidden;
-        }
-        
-        .separator::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            height: 1px;
-            background: rgba(0, 0, 0, 0.05);
-        }
-        
-        /* About Section */
-        .about {
-            padding: 8rem 2rem;
-            max-width: 800px;
-            margin: 0 auto;
-        }
-        
-        .about h2 {
-            font-size: 2.5rem;
-            margin-bottom: 2rem;
-            text-align: center;
-        }
-        
-        .about p {
-            font-size: 1.2rem;
-            margin-bottom: 1.5rem;
-        }
-        
-        /* Advisors Section */
-        .advisors {
-            padding: 8rem 2rem;
-            background-color: #f8f9fa;
-        }
-        
-        .advisors-inner {
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-        
-        .advisors h2 {
-            font-size: 2.5rem;
-            margin-bottom: 3rem;
-            text-align: center;
-        }
-        
-        .advisors-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-            gap: 3rem;
-        }
-        
-        .advisor-card {
-            text-align: center;
-        }
-        
-        .advisor-photo {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            overflow: hidden;
-            margin: 0 auto 1rem;
-            background-color: #eee;
-        }
-        
-        .advisor-photo img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-        
-        .advisor-name {
-            font-size: 1.2rem;
-            font-weight: 600;
-            margin-bottom: 0.5rem;
-        }
-        
-        .advisor-title {
-            font-size: 0.9rem;
-            color: #666;
-            margin-bottom: 0.5rem;
-        }
-        
-        /* Footer */
-        footer {
-            padding: 4rem 2rem;
-            background-color: #000;
-            color: #fff;
-            text-align: center;
-        }
-        
-        .footer-content {
-            max-width: 800px;
-            margin: 0 auto;
-        }
-        
-        .footer-logo {
-            font-size: 1.5rem;
-            font-weight: 700;
-            margin-bottom: 1rem;
-        }
-        
-        .footer-links {
-            display: flex;
-            justify-content: center;
-            margin-bottom: 2rem;
-            flex-wrap: wrap;
-        }
-        
-        .footer-links a {
-            color: #fff;
-            text-decoration: none;
-            margin: 0 1rem;
-            padding: 0.5rem 0;
-            opacity: 0.8;
-            transition: opacity 0.3s;
-        }
-        
-        .footer-links a:hover {
-            opacity: 1;
-        }
-        
-        .copyright {
-            opacity: 0.6;
-            font-size: 0.9rem;
-            /* max-width: 400px; */
-        }
-        
-        /* Responsive */
-        @media (max-width: 768px) {
-            .hero h1 {
-                font-size: 3.5rem;
-            }
-            
-            .hero p {
-                font-size: 1.2rem;
-            }
-            
-            .advisors-grid {
-                grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-                gap: 2rem;
-            }
-        }
-
-        .invisible-text {
-            color: rgba(85, 85, 85, 0.0)!important;
-        }
-
-        /* Add this to your CSS */
-        ol, ul {
-            margin-left: 2rem;
-            margin-bottom: 1.5rem;
-        }
-
-        li {
-            margin-bottom: 0.5rem;
-        }
-
-        ol li ol,
-        ol li ul,
-        ul li ol,
-        ul li ul {
-            margin-top: 0.5rem;
-            margin-bottom: 0.5rem;
-        }
-
-        .button-container {
-            display: flex;
-            justify-content: center;
-            margin-top: 3rem;
-        }
-        
-        .see-full-button {
-            display: inline-block;
-            background-color: #000;
-            color: #fff;
-            padding: 1rem 2rem;
-            border-radius: 4px;
-            font-weight: 600;
-            text-decoration: none;
-            transition: background-color 0.3s, transform 0.2s;
-        }
-        
-        .see-full-button:hover {
-            background-color: #333;
-            transform: translateY(-2px);
-        }
-    </style>
+    <link rel="stylesheet" href="./src/base.css" type="text/css">
 </head>
 <body>
+    <script src="./src/footer.js"></script>
+
+
     <!-- Hero Section -->
     <section class="hero">
         <div class="hero-content">
@@ -308,15 +66,11 @@
         </p>
 
         <p>
-            We seek to find all those on the frontier of human knowledge, across all domains, empirical & the spiritual, industry & academia, science & art. We want to find our peers, as well as those who disagree with us, and overlay & compare all prespectives. 
+            We seek to find all those on the frontier of human knowledge, across all domains, empirical & the spiritual, industry & academia, science & art. We want to find our peers, as well as those who disagree with us, and overlay & compare all perspectives. 
         </p>
 
         <p>
-            When someone stumbles on novel, groundbreaking knowledge, whether it comes from an academic paper, a company, or twitter/discord, we want to help it reach people who will use it (peer reviewers, developers, companies, or the world at large).
-        </p>
-
-        <p>
-            We need all the help we can get it. Please join us. 
+            We are opinionated about what research we pursue: it must contribute to the best possible world we can imagine, OR, it must be beautiful.  
         </p>
 
         <p>
@@ -326,7 +80,7 @@
         <h2 style="margin-top: 50px;">📝 Departments 📝</h2>
 
         <p>
-            These are the general categories of work that ORI is currently supporting:
+            These are the general categories of work that ORI's members are currently pursuing:
         </p>
 
         <p>
@@ -359,12 +113,6 @@
             <li>Creating an open research notebook with <a href="https://dev.to/defenderofbasic/host-your-obsidian-notebook-on-github-pages-for-free-8l1" target="_blank">Obsidian + GitHub Pages</a></li>
             <li>
                 Create a "now" page / research statement about your current work, and what your funding or collaboration needs are
-                <ul>
-                    <li>Example 1: <a href="https://chrislakin.blog/about" target="_blank">Chris Lakin</a> is working on human alignment & his statement is the about page of his substack</li>
-                    <li>Example 2: <a href="https://github.com/DefenderOfBasic/PhD?tab=readme-ov-file#defenders-phd" target="_blank">DefenderOfBasic</a> is doing an independent, internet PhD in memetics, his statement is a GitHub readme</li>
-                    <li>Example 3: <a href="https://docs.google.com/document/d/e/2PACX-1vQF6QRKFVbNvNuOkzZY2ysszKZo_oB7W8t-MiTFp00VsrEDiImir_gxvoYUQb-QTvm8wIk-LtaXljRZ/pub" target="_blank">Workflowsauce</a> has a "collab with me" google doc with what he's actively working on (education, communication, community)</li>
-                    <li>Example 4: <a href="https://docs.google.com/document/d/16tIpuu8WexxlM-3XpEub05BOTCFNiyvIVzZNXX0uDWw/edit?tab=t.0#heading=h.l5sni083xvxx" target="_blank">Ivan Vendrov</a> maintains a google doc of "shovel ready projects" for solving coordination / alignment of recommender systems</li>
-                </ul>
             </li>
         </ol>
 
@@ -377,14 +125,7 @@
             Where is the frontier of human knowledge, today? 
         </p>
 
-        <p>
-            Some of it is in 
-        </p> -->
-
-        <!-- <p>
-            This is a community & a 
-        </p>
-     -->
+ -->
     
     </section>
 
@@ -402,90 +143,32 @@
     -->
     
     <!-- Advisors Section -->
-    <!-- <section class="advisors">
+    <section class="advisors">
         <div class="advisors-inner">
-            <h2>⭐️ Featured Researchers ⭐️</h2>
+            <h2>Members</h2>
             <div class="advisors-grid">
-                <div class="advisor-card">
-                    <div class="advisor-photo">
-                        <img src="/api/placeholder/150/150" alt="placeholder">
-                    </div>
-                    <div class="advisor-name">Dr. Elena Sharma</div>
-                    <div class="advisor-title">i'm pretty invested in exploring memetics, i want to tie it together with a theory of consciousness that revolves around cognitive semiotics, linguistics and eventually narrative. it's a stretch but i have a good feeling about it so i want to follow that curiosity</div>
-                </div>
-                <div class="advisor-card">
-                    <div class="advisor-photo">
-                        <img src="/api/placeholder/150/150" alt="placeholder">
-                    </div>
-                    <div class="advisor-name">Prof. Marcus Chen</div>
-                    <div class="advisor-title">Cognitive Neuroscience</div>
-                </div>
-                <div class="advisor-card">
-                    <div class="advisor-photo">
-                        <img src="/api/placeholder/150/150" alt="placeholder">
-                    </div>
-                    <div class="advisor-name">Dr. Amara Okafor</div>
-                    <div class="advisor-title">Indigenous Knowledge Systems</div>
-                </div>
-                <div class="advisor-card">
-                    <div class="advisor-photo">
-                        <img src="/api/placeholder/150/150" alt="placeholder">
-                    </div>
-                    <div class="advisor-name">Dr. James Rivera</div>
-                    <div class="advisor-title">Complex Systems Theory</div>
-                </div>
-                <div class="advisor-card">
-                    <div class="advisor-photo">
-                        <img src="/api/placeholder/150/150" alt="placeholder">
-                    </div>
-                    <div class="advisor-name">Sarah Thompson, Ph.D.</div>
-                    <div class="advisor-title">Contemplative Practices & Psychology</div>
-                </div>
-                <div class="advisor-card">
-                    <div class="advisor-photo">
-                        <img src="/api/placeholder/150/150" alt="placeholder">
-                    </div>
-                    <div class="advisor-name">Prof. David Ekong</div>
-                    <div class="advisor-title">Computational Biology</div>
-                </div>
+     
+        
             </div>
         </div>
 
         <div class="button-container">
-            <a href="#" class="see-full-button">➡️ See all researchers</a>
+            <a href="./directory.html" class="see-full-button">➡️ See all <span id="num-of-researchers"></span></a>
         </div>
-    </section> -->
-
-    <!-- 
+    </section>
     
-    - Defender, link to my substack about page
-    - Park Doing 
-    
-    -->
-    
-    <!-- Footer -->
-    <footer>
-        <div class="footer-content">
-            <!-- <div class="footer-logo">Open Research Institute</div> -->
-            <!-- <div class="footer-links">
-                <a href="#">Home</a>
-                <a href="#">About</a>
-                <a href="#">Research</a>
-                <a href="#">Publications</a>
-                <a href="#">Events</a>
-                <a href="#">Contact</a>
-            </div> -->
+    <ori-footer></ori-footer>
 
-            <img src="assets/public-domain.png" width="300px"/>
-            
-            <div class="copyright" style="margin-top:20px; margin-bottom:20px">
-                The idea of the Open Research Institute itself is open source. Please copy, steal, remix to your heart's desire. All the infrastructure we create is building blocks that others can freely use towards the best possible implementation of this idea. <a style="color: #fff;" href="https://creativecommons.org/publicdomain/zero/1.0/">CC0, no rights reserved</a>
-            </div>
 
-            <div class="footer-links">
-                <a href="https://github.com/Open-Research-Institute">https://github.com/Open-Research-Institute</a>
-            </div>
-        </div>
-    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/js-yaml/4.1.0/js-yaml.min.js"></script>
+    <script type="module">
+        // Import the initDirectory function from your module
+        import { initDirectory } from './src/directory.js';
+        
+        const researchers = await initDirectory({ onlyFeatured: true })
+
+        document.querySelector("#num-of-researchers").innerHTML = 
+        `${researchers.length} members`
+    </script>
 </body>
 </html>
