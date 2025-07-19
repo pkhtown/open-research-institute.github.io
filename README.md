@@ -1,3 +1,3 @@
 # Open Research Institute 
 
-https://open-research-institute.github.io/
+[OpenResearchInstitute.org](https://OpenResearchInstitute.org/)
