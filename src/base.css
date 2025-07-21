@@ -5,6 +5,14 @@
     box-sizing: border-box;
 }
 
+a {
+    color: black;
+}
+
+img {
+    max-width: 100%;
+}
+
 body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     line-height: 1.6;
@@ -82,6 +90,10 @@ body {
 .about p {
     font-size: 1.2rem;
     margin-bottom: 1.5rem;
+}
+
+.gray-background {
+    background-color: #f8f9fa;
 }
 
 /* Advisors Section */
@@ -264,3 +276,25 @@ ul li ul {
     background-size: 100% 100%, 300% 100%;
     animation: gradientMove 3s linear infinite;
   }
+
+
+
+  blockquote {
+  margin: 0 0 1em 0;
+  padding: 0.5em 1em;
+  border-left: 4px solid #e5e5e5;
+  color: #666;
+  background-color: #f6f8fa;
+  font-size: 1em;
+  line-height: 1.5;
+}
+
+blockquote p {
+  margin: 0;
+}
+
+/* Optional: Nested blockquotes */
+blockquote blockquote {
+  margin: 0.5em 0;
+  border-left-color: #d0d7de;
+}

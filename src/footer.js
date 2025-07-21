@@ -57,7 +57,7 @@ class ORIFooter extends HTMLElement {
               <img src="assets/public-domain.png" width="300px"/>
               
               <div class="copyright" style="margin-top:20px; margin-bottom:20px">
-                  The idea of the Open Research Institute itself is open source. Please copy, steal, remix to your heart's desire. All the infrastructure we create is building blocks that others can freely use towards the best possible implementation of this idea. <a style="color: #fff;" href="https://creativecommons.org/publicdomain/zero/1.0/">CC0, no rights reserved</a>
+                  The Open Research Institute itself is open source. Please copy, steal, remix to your heart's desire. All the infrastructure we create is building blocks that others can freely use towards the best possible implementation of this idea. <a style="color: #fff;" href="https://creativecommons.org/publicdomain/zero/1.0/">CC0, no rights reserved</a>
               </div>
   
               <div class="footer-links">
